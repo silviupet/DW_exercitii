@@ -35,6 +35,7 @@ border-color: brown;
 border-style: solid;
 }
 .produs{
+left: 4em;
 border-style: solid;
 border-width: medium;
 border-color: blue;
@@ -46,18 +47,8 @@ border-color: blue;
   border-style: solid;
 }
 #ceai {
-  left: 32%
   border-width: medium;
   border-color: red;
   border-style: dotted;
 
-}
-a:link {
-  color: green;
-}
-a:visited {
-  color: red;
-}
-a:hover {
-  color: yellow
 }
