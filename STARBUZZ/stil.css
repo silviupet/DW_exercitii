@@ -49,3 +49,32 @@ border-color: blue;
   border-color: red;
   border-style: dotted;
 }
+.guarantee {
+border-color: red;
+border-width: 2px;
+border-style: dashed;
+background-color: #a7cece;
+padding: 3px;
+padding-left: 80px;
+height: 100px;
+margin: 10px;
+min-height: 80px;
+/* min-height - caseta min 80 dar se mareste cat e nevoie */
+max-width: 400px;
+line-height: 1.6em;
+background-image: url(images/background.gif);
+background-repeat: no-repeat;
+background-position: top left;
+text-align: center;
+}
+a:link{
+  color: green;
+  text-decoration: none;
+}
+a:visited{
+  color: #888888;
+}
+a:hover{
+  color: yellow;
+  text-decoration: underline;
+}
