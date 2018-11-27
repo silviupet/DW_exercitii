@@ -52,15 +52,8 @@ border-color: blue;
   border-style: dotted;
 
 }
-a:link {
-  color: green;
-}
-a:visited {
-  color: red;
-}
-a:hover {
-  color: yellow
-}
+
+
 .guarantee {
 border-color: red;
 border-width: 2px;
@@ -88,7 +81,7 @@ box-sizing:content-box;
   font-style: italic;
 }
 .artist{
-  font-style: oblique;
+  font-style: normal;
 }
 #tichet{
 position: fixed;
