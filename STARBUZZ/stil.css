@@ -4,7 +4,7 @@
 background-color: rgb(90%,60%,0%);
 font-family: sans-serif;
 font-size: 12px;
-margin-left: 20%;
+margin-left: 10%;
 }
 
 h1{font-size: 150%};
@@ -61,20 +61,21 @@ border-style: dashed;
 background-color: #a7cece;
 padding: 3px;
 padding-left: 80px;
-height: 100px;
+height: 200px;
+width: 200px;
 margin: 10px;
 margin-left: auto;
 margin-right: auto;
 min-height: 80px;
 /* min-height - caseta min 80 dar se mareste cat e nevoie */
-max-width: 400px;
+/* max-width: 100px; */
 line-height: 1.6em;
 background-image: url(images/background.gif);
 background-repeat: no-repeat;
 background-position: top left;
 text-align: center;
 box-sizing:content-box;
-/* float: right; */
+float: right;
 
 }
 .song{
@@ -83,11 +84,12 @@ box-sizing:content-box;
 .artist{
   font-style: normal;
 }
-#tichet{
+.tichet{
 position: fixed;
 top: 300px;
 right: 10px;
-witdh: 290;
+max-height: 100px;
+max-width: witdh: 30px;
 
 }
 a:link{
@@ -100,4 +102,26 @@ a:visited{
 a:hover{
   color: yellow;
   text-decoration: underline;
+}
+table{
+  position: fixed;
+  top: 300px;
+  right:10px;
+border-color: red;
+border-width: thin;
+border-style: solid;
+border-spacing: 0px;
+border-collapse: collapse;
+}
+td{
+  border-color: red;
+  border-width: thin;
+  border-style: solid;
+  padding: 5px
+}
+th{
+  background-color: #555555;
+  border-color: red;
+  border-width: thin;
+  border-style: solid;
 }
