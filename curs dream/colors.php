@@ -1,6 +1,7 @@
 	<?php
 	echo file_get_contents("html/header.html");
-	
+	session_start();
+	echo "welcome". $_SESSION["user"];
 	$colors = [
 	'w3-highway-brown' => '#633517',
 	'w3-highway-red' =>	"#a6001a",
