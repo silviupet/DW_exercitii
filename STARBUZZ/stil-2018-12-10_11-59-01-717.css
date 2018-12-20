@@ -112,8 +112,8 @@ border-width: thin;
 border-style: solid;
 border-spacing: 0px;
 border-collapse: collapse;
-/* margin-left: 20px;
-margin-right: 20px; */
+margin-left: 20px;
+margin-right: 20px;
 }
 td{
   border-color: red;

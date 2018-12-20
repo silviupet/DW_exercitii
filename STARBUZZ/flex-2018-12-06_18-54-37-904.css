@@ -1,0 +1,30 @@
+html, body {
+background-color: #ffeead;
+
+}
+
+div {
+  border-width: medium;
+  border-color: orange;
+  border-style: double;
+  font-size: 2em;
+  font-family: sans-serif;
+  width: 33%;
+
+
+}
+div:nth-child(1) {
+  background-color: tan;
+}
+div:nth-child(2) {
+  background-color: yellow;
+}
+div:nth-child(3) {
+  background-color: lightblue;
+}
+#container {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
+}
