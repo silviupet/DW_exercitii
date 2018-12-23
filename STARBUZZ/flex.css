@@ -9,7 +9,8 @@ div {
   border-style: double;
   font-size: 2em;
   font-family: sans-serif;
-  width: 30%;
+
+  width: 33%;
 
 
 }
@@ -25,6 +26,6 @@ div:nth-child(3) {
 #container {
 display: flex;
 flex-direction: row;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 
 }
