@@ -1,0 +1,16 @@
+.col-sm:nth-child(1){
+  background-color: red;
+  border: 5px solid black;
+}
+.col-sm:nth-child(2){
+  background-color: green;
+  border: 5px solid black;
+}
+.col-md-4, .col-md-3, .col-auto {
+  background-color: green;
+  border: 5px solid black;
+}
+.card-body{
+  background-color: green;
+  border-radius: 16px
+}
