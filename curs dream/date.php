@@ -14,7 +14,7 @@ for($j=1 ; $j<10; $j++) {
 	echo "</div>";
 }
 
-$colors = ["red","green","blue1"];
+$colors = ["red","green","blue"];
 foreach($colors as $color) {
 	echo "<div style=\"color: $color;\">$color</div>";
 
