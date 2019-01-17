@@ -1,8 +1,2 @@
 admin@mail.com:12345
-
-
-sfpetrescu@gmail.com:sss
-silviupet@gmail.com:sss
-admin:sss
-admin@mail.com:aaa
-xxxx:aaa
+ddddd:aaa
