@@ -2,7 +2,7 @@
 //se va folosi functie error($message) deoarece singurul elem care variaza este mesajul. functia contine mesajul si exit()
 
 if(!isset($_POST['email'])) {
-error("email is required");	
+	error("email is required");
 }
 //putea fi folosit si 
 //if(!isset($_POST['email'])) {
