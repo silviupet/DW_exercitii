@@ -2,7 +2,7 @@
 //se va folosi functie error($message) deoarece singurul elem care variaza este mesajul. functia contine mesajul si exit()
 
 if(!isset($_POST['email'])) {
-	error("email is required");
+error("email is required");
 }
 //putea fi folosit si
 //if(!isset($_POST['email'])) {
@@ -25,7 +25,7 @@ $users = getUsers();
 if(in_array($_POST['email'],$users)) error("user already exist");
 $line = $_POST['email'].":".$_POST['psw']. PHP_EOL;
 file_put_contents("user.txt", $line, FILE_APPEND);//FILE APPEND se pune pt a nu se suprascrie fisierul
-echo "bine ati venit ";
+
 
 
 //crearea unei finctii de extragere a userului si pas din fisierul user.txt
@@ -37,7 +37,6 @@ function getUsers(){
 	$lines=file("user.txt");
 	$users = [];
 	foreach($lines as $line){
-	if(($line)=='') continue;
 	list($email,$psw) = (explode(":", trim($line), 2));
 	$users[]=$email;
 		}
