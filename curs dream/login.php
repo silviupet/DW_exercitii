@@ -16,6 +16,9 @@ if(isset($users[$uname])){
 	if($_POST["psw"] == $users[$uname]){
 		
 		echo "welcome $uname!";
+		session_start();
+		$SESSION["user"] = $uname;
+		
 	}else {
 	echo "user and pass not match";
 }
