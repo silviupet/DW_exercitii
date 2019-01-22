@@ -18,6 +18,7 @@ function testZeroGame(){
 function testSpare(){
 	$game = new BowlingGame();
 	
+
 	$game->roll(5);
 	$game->roll(5);
 //	avem spare asta inseamna bonus nr de popice doborate la urmat aruncare (in ex nostru de 3)
@@ -27,7 +28,7 @@ function testSpare(){
 	if($game->score() !=16){
 		echo "test gresit, scorul " . $game->score()." e diferitde 16\n";
 	} else{
-		echo "ok";
+		echo "ok\n";
 	}
 }
 function testStrike(){
@@ -48,4 +49,5 @@ function testStrike(){
 testZeroGame();
 testSpare();
 testStrike();
+
 ?>

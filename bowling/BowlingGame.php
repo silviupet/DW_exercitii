@@ -16,33 +16,33 @@ class BowlingGame
 		 $i = 0;
 		 $rolls = $this->rolls; 
 		// pentru a prescurta si a nu scrie in funtia de mai jos $this->rolls si doar $rolls - este e variabila temporara. 
-		while($i<21){
+		while($i<=21){
 //		 facem o bucla in care se incrementeaza i (nr de aruncari pana la 21 aruncari - altfel incrementarile din functiile de mai jos s-ar opri. )
 			if($this->isSpare($i)){
 				$score += 10 + $rolls[$i+2];
-				$i +=2; 
+				$i += 2; 
 	//			se incrementeaza i su 2 la spare si normal si cu 1 la strike
 
 			}elseif ($this->isStrike($i)) {
 				$score += 10 + $rolls[$i+1] + $rolls[$i+2];
-				$i ++;
+				$i++;
 			} else {
 				$score += $rolls[$i] + $rolls[$i+1];
-				$i +=2;
+				$i += 2;
 			}
 
-			return $score;
-
 		}
+		return $score;
 	}
+	
 	
 	
 	public function isStrike($i){
-		return $this->rolls($i)  == 10;
+		return $this->rolls[$i] == 10;
 	}
 	
 	public function isSpare($i){
-		return $this->rolls($i) + $this->rolls($i+1) == 10;
+		return $this->rolls[$i] + $this->rolls[$i+1] == 10;
 	}
 	
 	
