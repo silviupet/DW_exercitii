@@ -3,13 +3,23 @@
 session_start();
 if(!isset($_SESSION['number'])){
 	$_SESSION['number'] = random_number();	
+	$_SESSION['tries']= [];
 }
-
+if(!isset($_SESSION['treis'])){
+	$_SESSION['tries'] = [];
+}
 if(isset($_POST['userNumber'])){
-	$userNumber = $_POST['userNumber'];
-		if(is_valid_number($userNumber)){
+	$userNumber = (int)$_POST['userNumber'];
+		if(is_valid_number(c)){
 			$noofCorrectDigits = count_correct_digits($userNumber);	
 			$noOfDigitsInPosition = count_digits_in_position($userNumber);
+			$_SESSION['tries'] [] =
+				"$usernumber: corect  - $noOfCorrectDigits". 
+				"in Place - $noOfDigitsInPosition <br>";
+			echo implode($_SESSION['tries']);
+			if($userNumber == $_SESSION['number']){
+				echo 'ai castigat';
+			}
 		}	
 }
 
@@ -53,3 +63,45 @@ function has_repeted_digies(int $number) {
 	
 	
 }
+
+function count_digits_in_position(int $userNumber){
+	$sessionNumber = $_SESSION['number'];
+	$count = 0;
+	for ($i=0; $i<3; $i++){
+		if (substr($userNumber, $i, 1 == substr($sessionNumber, $i, 1))){
+			$count++;
+		}
+	}
+	return $count;
+	
+};
+	
+	function is_valid_number(int $userNumber) {
+		return strlen($usernumber) == 3 &&
+				!has_repeted_digits($userNumber);
+		
+		}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
