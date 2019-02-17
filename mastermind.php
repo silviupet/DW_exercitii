@@ -42,7 +42,7 @@ function random_number() {
 		return $number;	
 }
 //	verificam daca are cifre identice transformand numarul in array cu str_split, apoi aplicam array_unique 
-//	care elimina dublurile si comparam arrayul initial cu arrayul split.
+//	care elimina dublurile si comparam arrayul initial cu arrayul unique.
 function has_repeted_digies(int $number) {
 	$digits = str_split($number);
 	$uniqueDigits = array_unique($digits);
