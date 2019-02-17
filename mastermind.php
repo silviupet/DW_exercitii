@@ -3,27 +3,28 @@
 session_start();
 if(!isset($_SESSION['number'])){
 	$_SESSION['number'] = random_number();	
-	$_SESSION['tries']= [];
+	
 }
-if(!isset($_SESSION['treis'])){
+if(!isset($_SESSION['tries'])){
 	$_SESSION['tries'] = [];
 }
 if(isset($_POST['userNumber'])){
 	$userNumber = (int)$_POST['userNumber'];
-		if(is_valid_number(c)){
-			$noofCorrectDigits = count_correct_digits($userNumber);	
+		if(is_valid_number($userNumber)){
+			$noOfCorrectDigits = count_correct_digits($userNumber);	
 			$noOfDigitsInPosition = count_digits_in_position($userNumber);
 			$_SESSION['tries'] [] =
-				"$usernumber: corect  - $noOfCorrectDigits". 
+				"$userNumber: corect  - $noOfCorrectDigits". 
 				"in Place - $noOfDigitsInPosition <br>";
 			echo implode($_SESSION['tries']);
 			if($userNumber == $_SESSION['number']){
 				echo 'ai castigat';
+				die();
 			}
 		}	
 }
 
-function count_correct_digits(int $userNumber){
+function count_correct_digits(int $userNumber): int {
 //	transformam numarul emis de sesiune si cel de utilizator intr-un array -cu str_split si apoi array intersect - gaseste valorile comune intre cele 2 arrayuri si creaza un nou array cu val comune. 
 	$sessionNumber = $_SESSION['number'];
 	$comonDigits = array_intersect(
@@ -48,12 +49,12 @@ function random_number() {
 	do {
 		$number = rand(102,987);
 	}
-		while (has_repeted_digies($number));
+		while (has_repeted_digits($number));
 		return $number;	
 }
 //	verificam daca are cifre identice transformand numarul in array cu str_split, apoi aplicam array_unique 
 //	care elimina dublurile si comparam arrayul initial cu arrayul split.
-function has_repeted_digies(int $number) {
+function has_repeted_digits(int $number): bool {
 	$digits = str_split($number);
 	$uniqueDigits = array_unique($digits);
 	if(count($uniqueDigits) === count($digits)){
@@ -64,26 +65,27 @@ function has_repeted_digies(int $number) {
 	
 }
 
-function count_digits_in_position(int $userNumber){
+function count_digits_in_position(int $userNumber): int {
 	$sessionNumber = $_SESSION['number'];
 	$count = 0;
 	for ($i=0; $i<3; $i++){
-		if (substr($userNumber, $i, 1 == substr($sessionNumber, $i, 1))){
+		if (substr($userNumber, $i, 1) == substr($sessionNumber, $i, 1)){
 			$count++;
 		}
+		
 	}
 	return $count;
 	
-};
+}
 	
-	function is_valid_number(int $userNumber) {
-		return strlen($usernumber) == 3 &&
-				!has_repeted_digits($userNumber);
+	function is_valid_number(int $userNumber): bool {
+		return strlen($userNumber) == 3
+			&& !has_repeted_digits($userNumber);
 		
 		}
 		
 	
-	
+	 
 	
 	
 	
