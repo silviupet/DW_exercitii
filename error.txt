@@ -1,0 +1,13 @@
+
+2 Division by zero in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 21
+8 Undefined offset: 1 in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 24
+1024 e grav in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 27
+2 Division by zero in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 21
+8 Undefined offset: 1 in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 24
+1024 e grav in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 27
+2 Division by zero in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 21
+8 Undefined offset: 1 in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 24
+1024 e grav in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 27
+2 Division by zero in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 21
+8 Undefined offset: 1 in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 24
+1024 e grav in C:\xampp\htdocs\HTML_CSS_Training\DW_exercitii\errors.php at 27
